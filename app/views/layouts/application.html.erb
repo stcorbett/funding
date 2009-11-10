@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Scale Well</title>
+
+  <%= stylesheet_link_tag "styles" %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "curvycorners" %>
+  
+  <script type="text/JavaScript"> 
+    window.onload = function() {
+      var settings = {
+        tl: { radius: 10 },
+        tr: { radius: 10 },
+        bl: { radius: 10 },
+        br: { radius: 10 },
+        antiAlias: true
+      } 
+      
+      var divObj = document.getElementById("container"); 
+      var divObj2 = document.getElementById("leftcolumn"); 
+      
+      curvyCorners(settings, divObj, divObj2);
+    }
+
+  </script>
+</head>
+
+<body class="oneColFixCtr">
+
+<div id="container">
+  <div id="headline">
+    <span class="projecttitle">ScaleWell</span>
+  </div>
+  <div id="leftcolumn">
+    <%= yield %>
+  <!-- end #mainContent --></div>
+<!-- end #container --></div>
+</body>
+</html>
