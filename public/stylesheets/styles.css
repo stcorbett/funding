@@ -63,6 +63,15 @@ label {
   background:#000000;
 }
 
+#leftcolumn a {
+  color: #CCCCCC;
+  font-size: 1.2em;
+}
+
+#leftcolumn li {
+  list-style-type: none;
+}
+
 #rightcolumn {
   float: right;
   width: 200px;
