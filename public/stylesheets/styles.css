@@ -4,14 +4,31 @@ body {
   margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
   padding: 20px 0 20px 0;
   text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-  color: #000000;
-  
+  color: #000000;  
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 100%;
 }
 
-H1 a{
+H1 a {
   color: #000;
+}
+
+input, textarea {
+  background: black none repeat scroll 0 0;
+  border: thin solid #FFFFFF;
+  color: #CCC;
+  font-size: large;
+  padding: 3px;
+  width: 672px;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin: 5px 0;
+}
+
+label {
+  color: #FFF;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 100%;
+  font-size: 2em;
 }
 
 .clear {
@@ -57,4 +74,9 @@ H1 a{
   font-weight:bold;
   font-family:Helvetica, Verdana, Arial, sans-serif;
   color:#FFFFFF;
+}
+
+.pagetitle a {
+  color: #FFF;
+  text-decoration: none;
 }
