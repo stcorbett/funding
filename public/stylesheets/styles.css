@@ -1,49 +1,47 @@
 @charset "UTF-8";
 body {
-	background: #333333;
-	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
-	padding: 20px 0 20px 0;
-	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-	color: #000000;
-	
-	font-family: Helvetica, Verdana, Arial, sans-serif;
-	font-size: 100%;
+  background: #333333;
+  margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+  padding: 20px 0 20px 0;
+  text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+  color: #000000;
+  
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 100%;
 }
 .oneColFixCtr #container {
 
-	width: 960px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
-	background: #FF0033;
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-	border: 1px solid #FF0033 ;
-	
-	text-align: left; /* this overrides the text-align: center on the body element. */
+  width: 960px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+  background: #FF0033;
+  margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+  border: 1px solid #FF0033 ;
+  
+  text-align: left; /* this overrides the text-align: center on the body element. */
 }
 
 #headline{
-margin:20px;
-letter-spacing:-1px;
+  margin:20px;
+  letter-spacing:-1px;
 }
 .oneColFixCtr #mainContent {
-
- 
-	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+  padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
 
 #leftcolumn {
-color:#CCCCCC;
-font-family:Georgia, "Times New Roman", Times, serif;
-margin: 20px;
-padding: 20px;
-margin-top:50px;
- width: 680px;
- background:#000000;
+  color:#CCCCCC;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 20px;
+  margin-top:50px;
+  width: 680px;
+  background:#000000;
  
  
 }
 
 .pagetitle {
-font-size:72px;
-font-weight:bold;
-font-family:Helvetica, Verdana, Arial, sans-serif;
-color:#FFFFFF;
+  font-size:72px;
+  font-weight:bold;
+  font-family:Helvetica, Verdana, Arial, sans-serif;
+  color:#FFFFFF;
 }
