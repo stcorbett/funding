@@ -9,8 +9,16 @@ body {
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 100%;
 }
-.oneColFixCtr #container {
 
+H1 a{
+  color: #000;
+}
+
+.clear {
+  clear: both;
+}
+
+.oneColFixCtr #container {
   width: 960px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
   background: #FF0033;
   margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
@@ -23,6 +31,7 @@ body {
   margin:20px;
   letter-spacing:-1px;
 }
+
 .oneColFixCtr #mainContent {
   padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
@@ -35,8 +44,12 @@ body {
   margin-top:50px;
   width: 680px;
   background:#000000;
- 
- 
+}
+
+#rightcolumn {
+  float: right;
+  width: 200px;
+  padding: 27px 10px 10px 10px;
 }
 
 .pagetitle {

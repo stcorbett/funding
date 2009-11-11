@@ -32,10 +32,15 @@
 <div id="container">
   <div id="headline">
     <span class="pagetitle"><%= @page_title ||= "ScaleWell" %></span>
+    <%= @sub_title ? "<h1>#{@sub_title}</h1>" : nil %>
+  </div>
+  <div id="rightcolumn">
+    <%= render :partial => "layouts/right_col"%>
   </div>
   <div id="leftcolumn">
     <%= yield %>
-  <!-- end #mainContent --></div>
+  </div>
+  <div class="clear">&nbsp;</div>
 <!-- end #container --></div>
 </body>
 </html>
