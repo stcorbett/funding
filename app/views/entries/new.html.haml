@@ -1,0 +1,50 @@
+- form_for @entry do |f|
+  
+  %p
+    = f.label :company_name, "Company"
+    %br
+    = f.text_field :company_name
+
+  %p
+    = f.label :company_name, "Company URL"
+    %br
+    = f.text_field :url
+
+  %p
+    = f.label :company_name, "Your Name"
+    %br
+    = f.text_field :name
+  
+  %p
+    = f.label :company_name, "Your Email"
+    %br
+    = f.text_field :email
+  
+  %p
+    = f.label :company_name, "Contact Phone"
+    %br
+    = f.text_field :phone
+  
+  
+  
+  %p
+    = f.label :company_name, "Team"
+    %br
+    = f.text_area :team, :rows => 5
+  
+  %p
+    = f.label :company_name, "Product"
+    %br
+    = f.text_area :product, :rows => 5
+    
+  %p
+    = f.label :company_name, "Customer"
+    %br
+    = f.text_area :customer, :rows => 5
+    
+  %p
+    = f.label :company_name, "Goals"
+    %br
+    = f.text_area :goals, :rows => 5
+
+  

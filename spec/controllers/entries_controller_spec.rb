@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe EntryController do
+describe EntriesController do
 
   #Delete this example and add some real ones
   it "should use EntryController" do
