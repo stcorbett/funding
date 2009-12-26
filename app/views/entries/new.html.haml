@@ -7,7 +7,7 @@
     = f.text_field :company_name, :style => "width: 300px;"
 
   %p.left.left_margin_15
-    = f.label :url, "URL"
+    = f.label :url, "URL (project or other)"
     %br
     = f.text_field :url, :style => "width: 343px;"
 
@@ -27,22 +27,6 @@
   .clear
   
   /Application
-  /  Team
-  %p
-    = f.label :team, "Who is working on this"
-    %br
-    = f.text_area :team, :rows => 3
-    
-  %p
-    = f.label :team, "Why is your team awesome"
-    %br
-    = f.text_area :team, :rows => 3
-    
-  %p
-    = f.label :team, "The most important thing we need to know about you?"
-    %br
-    = f.text_area :team, :rows => 3
-    
   /   Product
   %p
     = f.label :product, "Describe your product (200 words)"
@@ -50,7 +34,7 @@
     = f.text_area :product, :rows => 5
     
   %p
-    = f.label :customer, "What tools are you using to build it"
+    = f.label :customer, "What tools are you using to build it?"
     %br
     = f.text_area :customer, :rows => 5
     
@@ -60,4 +44,14 @@
     %br
     = f.text_area :goals, :rows => 5
 
+  /  Team
+  %p
+    = f.label :team, "Who is working on this?"
+    %br
+    = f.text_area :team, :rows => 3
+    
+  %p
+    = f.label :team, "What's The most important thing we need to know about you?"
+    %br
+    = f.text_area :team, :rows => 3
   
