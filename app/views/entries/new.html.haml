@@ -1,49 +1,62 @@
 - form_for @entry do |f|
   
-  %p
-    = f.label :company_name, "Company"
+  /Company Name
+  %p.left
+    = f.label :company_name, "Company/Idea Name"
     %br
-    = f.text_field :company_name
+    = f.text_field :company_name, :style => "width: 300px;"
 
-  %p
-    = f.label :company_name, "Company URL"
+  %p.left.left_margin_15
+    = f.label :url, "URL"
     %br
-    = f.text_field :url
+    = f.text_field :url, :style => "width: 343px;"
 
-  %p
-    = f.label :company_name, "Your Name"
+  .clear
+  
+  /Contact
+  %p.left
+    = f.label :name, "Your Name"
     %br
-    = f.text_field :name
+    = f.text_field :name, :style => "width: 300px;"
   
-  %p
-    = f.label :company_name, "Your Email"
+  %p.left.left_margin_15
+    = f.label :email, "Email"
     %br
-    = f.text_field :email
+    = f.text_field :email, :style => "width: 343px;"
   
+  .clear
+  
+  /Application
+  /  Team
   %p
-    = f.label :company_name, "Contact Phone"
+    = f.label :team, "Who is working on this"
     %br
-    = f.text_field :phone
-  
-  
-  
+    = f.text_area :team, :rows => 3
+    
   %p
-    = f.label :company_name, "Team"
+    = f.label :team, "Why is your team awesome"
     %br
-    = f.text_area :team, :rows => 5
-  
+    = f.text_area :team, :rows => 3
+    
   %p
-    = f.label :company_name, "Product"
+    = f.label :team, "The most important thing we need to know about you?"
+    %br
+    = f.text_area :team, :rows => 3
+    
+  /   Product
+  %p
+    = f.label :product, "Describe your product (200 words)"
     %br
     = f.text_area :product, :rows => 5
     
   %p
-    = f.label :company_name, "Customer"
+    = f.label :customer, "What tools are you using to build it"
     %br
     = f.text_area :customer, :rows => 5
     
+  /   Customers
   %p
-    = f.label :company_name, "Goals"
+    = f.label :goals, "Describe your customer (200 words)"
     %br
     = f.text_area :goals, :rows => 5
 

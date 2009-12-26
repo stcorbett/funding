@@ -28,11 +28,19 @@ label {
   color: #FFF;
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 100%;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .clear {
   clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.left_margin_15{
+  margin-left: 15px;
 }
 
 .bold {
