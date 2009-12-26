@@ -35,6 +35,22 @@ label {
   clear: both;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.white{
+  color: #FFFFFF;
+}
+
+.red {
+  color: #FF0033;
+}
+
+.italic{
+  font-style: italic;
+}
+
 .oneColFixCtr #container {
   width: 960px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
   background: #FF0033;
@@ -72,6 +88,10 @@ label {
   list-style-type: none;
 }
 
+#leftcolumn ol li {
+  list-style-type: inherit;
+}
+
 #rightcolumn {
   float: right;
   width: 200px;
@@ -88,4 +108,12 @@ label {
 .pagetitle a {
   color: #FFF;
   text-decoration: none;
+}
+
+#dictionary a{
+  font-size: 1em;
+}
+
+#dictionary p, #dictionary ol{
+  margin: 10px 0px;
 }
