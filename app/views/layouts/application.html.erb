@@ -30,6 +30,7 @@
 <body class="oneColFixCtr">
 
 <div id="container">
+  <%= render :partial => "layouts/navigation"%>
   <div id="headline">
     <% @page_title ||= "ScaleWell" -%>
     <span class="pagetitle"><%= link_to @page_title, home_path %></span>

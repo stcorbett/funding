@@ -73,6 +73,35 @@ label {
   letter-spacing:-1px;
 }
 
+#navigation{
+  width: 415px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 21px;
+  font-size: 25px;
+}
+
+#navigation ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navigation li{
+  float: left;
+  margin-right: 10px;
+}
+
+#navigation .bar{
+  border-right: 2px solid #FFF;
+  padding-right: 10px;
+}
+
+#navigation a, #navigation a:visited{
+  color: #FFF;
+  text-decoration: none;
+}
+
 .oneColFixCtr #mainContent {
   padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
