@@ -102,6 +102,10 @@ label {
   text-decoration: none;
 }
 
+#splash h2{
+  color: #FFFFFF;
+}
+
 .oneColFixCtr #mainContent {
   padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
@@ -133,6 +137,8 @@ label {
   float: right;
   width: 200px;
   padding: 27px 10px 10px 10px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .pagetitle {
