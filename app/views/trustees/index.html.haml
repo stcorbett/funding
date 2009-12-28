@@ -19,5 +19,35 @@
     = link_to "Ziad Hussain", "http://www.popghost.com"
     = link_to "@ziadbc", "http://www.twitter.com/ziadbc"
 
-insert "become a trustee now"
-name - contact - main site - organization (your main squeeze) - twitter
+
+%h2
+  Want to help?
+
+Send us some links to your online identity and we will get in touch when the next grant is being organized.
+
+- form_for @trustee do |f|
+  %p.left
+    = f.label :name, "Name"
+    %br
+    = f.text_field :name, :style => "width: 100px;"
+  %p.left.left_margin_15
+    = f.label :email, "Email"
+    %br
+    = f.text_field :email, :style => "width: 100px;"
+  %p.left.left_margin_15
+    = f.label :url, "Url"
+    %br
+    = f.text_field :url, :style => "width: 100px;"
+  %p.left.left_margin_15
+    = f.label :organization, "Organization"
+    %br
+    = f.text_field :organization, :style => "width: 150px;"
+  %p.left.left_margin_15
+    = f.label :twitter, "Twitter"
+    %br
+    = f.text_field :twitter, :style => "width: 100px;"
+    
+  = submit_tag 'Submit', { :id => 'submitbutton', :style => "width: 100px;" }
+
+
+.clear

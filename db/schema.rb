@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20091227022841) do
     t.string   "url"
     t.string   "organization"
     t.string   "twitter"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
