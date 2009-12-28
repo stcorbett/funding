@@ -102,6 +102,19 @@ label {
   text-decoration: none;
 }
 
+#footer {
+  margin: 10px;
+}
+
+#footer, #footer a, #footer a:visited{
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+#footer .footer{
+  margin: 0px 10px;
+}
+
 #splash h2{
   color: #FFFFFF;
 }
