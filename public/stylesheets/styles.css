@@ -177,3 +177,16 @@ label {
 #dictionary p, #dictionary ol{
   margin: 10px 0px;
 }
+
+.align_submit_200{
+  margin: 0 auto;
+  width: 200px;
+}
+
+.align_submit_100{
+  margin: 0 auto;
+  width: 100px;
+}
+
+#submitbutton {
+}
