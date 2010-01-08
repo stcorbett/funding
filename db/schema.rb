@@ -9,20 +9,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091227022841) do
+ActiveRecord::Schema.define(:version => 20100108175929) do
 
   create_table "entries", :force => true do |t|
     t.string   "company_name"
     t.string   "name"
     t.string   "email"
     t.string   "url"
-    t.string   "phone"
     t.text     "team"
     t.text     "product"
     t.text     "customer"
     t.text     "goals"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "tools"
+    t.text     "wildcard"
   end
 
   create_table "trustees", :force => true do |t|

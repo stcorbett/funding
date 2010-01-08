@@ -36,26 +36,31 @@ Applications are now open and will close on January 31st 2010.
     = f.text_area :product, :rows => 5
     
   %p
-    = f.label :customer, "What tools are you using to build it?"
+    = f.label :tools, "What tools are you using to build it?"
     %br
-    = f.text_area :customer, :rows => 5
+    = f.text_area :tools, :rows => 5
     
   /   Customers
   %p
-    = f.label :goals, "Describe your customer (200 words)"
+    = f.label :customer, "Describe your customer (200 words)"
     %br
-    = f.text_area :goals, :rows => 5
+    = f.text_area :customer, :rows => 5
 
   /  Team
   %p
     = f.label :team, "Who is working on this?"
     %br
     = f.text_area :team, :rows => 3
-    
+  
   %p
-    = f.label :team, "What's The most important thing we need to know about you?"
+    = f.label :goals, "What can you accomplish in 2 months? (200 words)"
     %br
-    = f.text_area :team, :rows => 5
+    = f.text_area :customer, :rows => 5
+  
+  %p
+    = f.label :wildcard, "What's The most important thing we need to know about you?"
+    %br
+    = f.text_area :wildcard, :rows => 5
   
   .align_submit_200
     = submit_tag 'Submit', { :id => 'submitbutton', :style => "width: 200px;" }

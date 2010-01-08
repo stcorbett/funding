@@ -40,6 +40,13 @@
     <%= render :partial => "layouts/right_col"%>
   </div>
   <div id="leftcolumn">
+    
+    <% if flash[:notice] %>
+      <div id="flash" class="red">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    
     <%= yield %>
   </div>
   <div class="clear">&nbsp;</div>
