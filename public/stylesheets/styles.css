@@ -78,7 +78,7 @@ label {
 }
 
 #navigation{
-  width: 420px;
+  width: 500px;
   float: right;
   margin-right: 20px;
   margin-top: 21px;
@@ -176,6 +176,10 @@ label {
 
 #dictionary p, #dictionary ol{
   margin: 10px 0px;
+}
+
+#faq ul{
+  padding: 0px;
 }
 
 .align_submit_200{
