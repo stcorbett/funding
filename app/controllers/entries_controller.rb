@@ -7,8 +7,8 @@ class EntriesController < ApplicationController
   end
 
   def create
-    @entry = Entry.create(params[:entry])
-    flash[:notice] = "Entry submitted.  You should recieve an email with further information about the application process."
+    #@entry = Entry.create(params[:entry])
+    flash[:notice] = "Entries are currently closed."
     redirect_to :action => :index
   end
 
