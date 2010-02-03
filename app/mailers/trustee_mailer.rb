@@ -7,4 +7,10 @@ class TrusteeMailer < ActionMailer::Base
     @body[:trustee] = trustee
   end
   
+  def trustee_intro(trustee)
+    @recipients   = [trustee.email]
+    @subject      = "ScaleWell Trustee Introduction"
+    @from         = 'info@scalewell.com'
+  end
+  
 end
