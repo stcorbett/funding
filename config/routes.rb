@@ -11,6 +11,9 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
+  map.success '/trustees/success', :controller => "trustees", :action => "success"
+  map.give '/trustees/give', :controller => "trustees", :action => "give"
+  
   map.resources :entries
   map.resources :trustees
 
