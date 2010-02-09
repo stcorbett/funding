@@ -144,6 +144,7 @@ label {
 
 #leftcolumn li {
   list-style-type: none;
+  margin: 5px 0;
 }
 
 #leftcolumn ol li {
