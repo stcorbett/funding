@@ -63,6 +63,26 @@ label {
   font-style: italic;
 }
 
+.spacer_200{
+  height: 200px;
+}
+
+.spacer_100{
+  height: 100px;
+}
+
+.spacer_50{
+  height: 50px;
+}
+
+.font_16{
+  font-size: 16px;
+}
+
+.font_18{
+  font-size: 18px;
+}
+
 .oneColFixCtr #container {
   width: 960px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
   background: #FF0033;
@@ -101,7 +121,7 @@ label {
   padding-right: 10px;
 }
 
-#navigation a, #navigation a:visited{
+#navigation a, #navigation a:visited, #rightcolumn a, #rightcolumn a:visited{
   color: #FFF;
   text-decoration: none;
 }
