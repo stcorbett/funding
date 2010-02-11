@@ -71,6 +71,10 @@ label {
   height: 100px;
 }
 
+.spacer_25{
+  height: 25px;
+}
+
 .spacer_50{
   height: 50px;
 }
@@ -214,4 +218,14 @@ label {
 }
 
 #submitbutton {
+}
+
+#mc-embedded-subscribe{
+  font-size: 15px;
+  width: 199px;
+}
+
+#mce-EMAIL{
+  font-size: 15px;
+  width: 191px;
 }
