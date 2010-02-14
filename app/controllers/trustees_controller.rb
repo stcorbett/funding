@@ -6,7 +6,7 @@ class TrusteesController < ApplicationController
   
   def create
     @trustee = Trustee.create(params[:trustee])
-    flash[:notice] = "Thanks!  You should recieve an email with more information about the grant."
+    flash[:notice] = "Thanks!  We will send information about the upcomming grants in the next few weeks."
     redirect_to :action => :index
   end
   
