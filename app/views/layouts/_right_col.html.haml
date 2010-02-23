@@ -17,4 +17,4 @@
 
 %div{:style => "margin-top: 20px;"}
   Mailing List
-=render :partial => "layouts/mail_chimp"
+=render :partial => "layouts/mail_chimp" unless Rails.env.development?
