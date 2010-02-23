@@ -16,6 +16,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :entries
   map.resources :trustees
+  map.resources :grants
 
   map.resource :dictionary
   
