@@ -1,9 +1,53 @@
 %h2
-  Who is putting this together?
+  ScaleWell Trustees
 
 %p
   We are a group of entrepreneurs with ties to Chicago.
   We have various levels of experience but most of us have started at least one company with a scalable business model.
+
+
+%h2
+  Interested in becoming a ScaleWell Trustee?
+
+The responsibilities of a trustee are not trivial, but are flexible enough to fit in with your other responsibilities.
+Each trustee contributes $100 to the funding of each ScaleWell grant. 
+Trustees are also mentors for the recipient and are asked to be available to discuss goals with the recipient, 
+holding a meeting if necessary. 
+The trustees jointly choose the recipient of each ScaleWell grant, 
+participation in the application selection process is recommended but not required. 
+The awarding of a ScaleWell grant will often happen at a community building event. 
+Trustees are invited to these events and encouraged to attend. 
+
+%p
+  Send us some links to your online identity and we will get in touch when the next grant is being organized.
+
+- form_for @trustee do |f|
+  %p.left
+    = f.label :name, "Name"
+    %br
+    = f.text_field :name, :style => "width: 100px;"
+  %p.left.left_margin_15
+    = f.label :email, "Email"
+    %br
+    = f.text_field :email, :style => "width: 100px;"
+  %p.left.left_margin_15
+    = f.label :url, "Url"
+    %br
+    = f.text_field :url, :style => "width: 100px;"
+  %p.left.left_margin_15
+    = f.label :organization, "Organization"
+    %br
+    = f.text_field :organization, :style => "width: 150px;"
+  %p.left.left_margin_15
+    = f.label :twitter, "Twitter"
+    %br
+    = f.text_field :twitter, :style => "width: 100px;"
+    
+  = submit_tag 'Submit', { :id => 'submitbutton', :style => "width: 100px;" }
+
+
+%h2
+  Current Trustees
 
 %ul#trustees
   %li
@@ -77,35 +121,5 @@
     = link_to "@kwiller", "http://www.twitter.com/@kwiller"
   %li
     = link_to "Fred Hoch (Illinois Technology Association)", "http://illinoistech.org"
-
-%h2
-  Want to help?
-
-Send us some links to your online identity and we will get in touch when the next grant is being organized.
-
-- form_for @trustee do |f|
-  %p.left
-    = f.label :name, "Name"
-    %br
-    = f.text_field :name, :style => "width: 100px;"
-  %p.left.left_margin_15
-    = f.label :email, "Email"
-    %br
-    = f.text_field :email, :style => "width: 100px;"
-  %p.left.left_margin_15
-    = f.label :url, "Url"
-    %br
-    = f.text_field :url, :style => "width: 100px;"
-  %p.left.left_margin_15
-    = f.label :organization, "Organization"
-    %br
-    = f.text_field :organization, :style => "width: 150px;"
-  %p.left.left_margin_15
-    = f.label :twitter, "Twitter"
-    %br
-    = f.text_field :twitter, :style => "width: 100px;"
-    
-  = submit_tag 'Submit', { :id => 'submitbutton', :style => "width: 100px;" }
-
 
 .clear
