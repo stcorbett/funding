@@ -1,73 +1,67 @@
-.spacer_25
-Thanks for applying to the first round of ScaleWell.  We will announce our second round of applications shortly
-.spacer_200
+Applications are now open and will close on April 1st, 2010.
 
+- form_for @entry do |f|
 
--#
-  Applications are now open and will close on January 31st 2010.
+  /Company Name
+  %p.left
+    = f.label :company_name, "Company/Idea Name"
+    %br
+    = f.text_field :company_name, :style => "width: 300px;"
 
-  - form_for @entry do |f|
-  
-    /Company Name
-    %p.left
-      = f.label :company_name, "Company/Idea Name"
-      %br
-      = f.text_field :company_name, :style => "width: 300px;"
+  %p.left.left_margin_15
+    = f.label :url, "URL (project or other)"
+    %br
+    = f.text_field :url, :style => "width: 343px;"
 
-    %p.left.left_margin_15
-      = f.label :url, "URL (project or other)"
-      %br
-      = f.text_field :url, :style => "width: 343px;"
+  .clear
 
-    .clear
-  
-    /Contact
-    %p.left
-      = f.label :name, "Your Name"
-      %br
-      = f.text_field :name, :style => "width: 300px;"
-  
-    %p.left.left_margin_15
-      = f.label :email, "Email"
-      %br
-      = f.text_field :email, :style => "width: 343px;"
-  
-    .clear
-  
-    /Application
-    /   Product
-    %p
-      = f.label :product, "Describe your product (200 words)"
-      %br
-      = f.text_area :product, :rows => 5
-    
-    %p
-      = f.label :tools, "What tools are you using to build it?"
-      %br
-      = f.text_area :tools, :rows => 5
-    
-    /   Customers
-    %p
-      = f.label :customer, "Describe your customer (200 words)"
-      %br
-      = f.text_area :customer, :rows => 5
+  /Contact
+  %p.left
+    = f.label :name, "Your Name"
+    %br
+    = f.text_field :name, :style => "width: 300px;"
 
-    /  Team
-    %p
-      = f.label :team, "Who is working on this?"
-      %br
-      = f.text_area :team, :rows => 3
+  %p.left.left_margin_15
+    = f.label :email, "Email"
+    %br
+    = f.text_field :email, :style => "width: 343px;"
+
+  .clear
+
+  /Application
+  /   Product
+  %p
+    = f.label :product, "Describe your product (200 words)"
+    %br
+    = f.text_area :product, :rows => 5
   
-    %p
-      = f.label :goals, "What can you accomplish in 2 months? (200 words)"
-      %br
-      = f.text_area :goals, :rows => 5
+  %p
+    = f.label :tools, "What tools are you using to build it?"
+    %br
+    = f.text_area :tools, :rows => 5
   
-    %p
-      = f.label :wildcard, "What's The most important thing we need to know about you?"
-      %br
-      = f.text_area :wildcard, :rows => 5
-  
-    .align_submit_200
-      = submit_tag 'Submit', { :id => 'submitbutton', :style => "width: 200px;" }
+  /   Customers
+  %p
+    = f.label :customer, "Describe your customer (200 words)"
+    %br
+    = f.text_area :customer, :rows => 5
+
+  /  Team
+  %p
+    = f.label :team, "Who is working on this?"
+    %br
+    = f.text_area :team, :rows => 3
+
+  %p
+    = f.label :goals, "What can you accomplish in 2 months? (200 words)"
+    %br
+    = f.text_area :goals, :rows => 5
+
+  %p
+    = f.label :wildcard, "What's The most important thing we need to know about you?"
+    %br
+    = f.text_area :wildcard, :rows => 5
+
+  .align_submit_200
+    = submit_tag 'Submit', { :id => 'submitbutton', :style => "width: 200px;" }
   
