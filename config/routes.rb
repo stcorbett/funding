@@ -19,6 +19,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :grants
 
   map.resource :dictionary
+
+  map.resource :user_session
+
   
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
