@@ -1,0 +1,19 @@
+<h1>Edit My Account</h1>
+
+<% form_for @user, :url => account_path do |f| %>
+  <%= f.error_messages %>
+
+  <%= f.label :email %><br />
+  <%= f.text_field :email %><br />
+  <br />
+  <%= f.label :password, "Change password" %><br />
+  <%= f.password_field :password %><br />
+  <br />
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %><br />
+
+  <%= f.submit "Update" %>
+<% end %>
+
+<br /><%= link_to "My Profile", account_path %>
+

@@ -21,19 +21,35 @@ Trustees are invited to these events and encouraged to attend.
 %p
   Send us some links to your online identity and we will get in touch when the next grant is being organized.
 
-- form_for @trustee do |f|
+- form_for(@user, :url => trustees_path) do |f|
+
+  = f.error_messages
+
   %p.left
     = f.label :name, "Name"
     %br
     = f.text_field :name, :style => "width: 100px;"
+
   %p.left.left_margin_15
     = f.label :email, "Email"
     %br
-    = f.text_field :email, :style => "width: 100px;"
+    = f.text_field :email, :style => "width: 200px;"
+
+  %p.left.left_margin_15
+    = f.label :password, "Password"
+    %br
+    = f.password_field :password, :style => "width: 100px;"
+
+  %p.left.left_margin_15
+    = f.label :password_confirmation, "Password Confirmation"
+    %br
+    = f.password_field :password_confirmation, :style => "width: 100px;"
+
   %p.left.left_margin_15
     = f.label :url, "Url"
     %br
     = f.text_field :url, :style => "width: 100px;"
+
   %p.left.left_margin_15
     = f.label :organization, "Organization"
     %br
