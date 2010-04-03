@@ -36,6 +36,7 @@
     <span class="pagetitle"><%= link_to @page_title, home_path %></span>
     <%= @sub_title ? "<h1>#{@sub_title}</h1>" : nil %>
   </div>
+
   <div id="rightcolumn">
     <%= render :partial => "layouts/right_col"%>
   </div>
@@ -52,6 +53,14 @@
   <div class="clear">&nbsp;</div>
 <!-- end #container --></div>
 <div id="footer">
+
+  <% if !current_user %>
+    <%= link_to "Log In", new_user_session_path %> |
+  <% else %>
+    <%#= link_to "My Account", account_path %> |
+    <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
+  <% end %>
+
   <%= render :partial => "layouts/footer" %>
 </div>
 
