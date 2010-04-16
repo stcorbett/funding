@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background: #333333;
+  background: #CCC;
   margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
   padding: 20px 0 20px 0;
   text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
@@ -56,7 +56,7 @@ label {
 }
 
 .red {
-  color: #FF0033;
+  color: #520063;
 }
 
 .italic{
@@ -89,9 +89,9 @@ label {
 
 .oneColFixCtr #container {
   width: 960px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
-  background: #FF0033;
+  background: #520063;
   margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-  border: 1px solid #FF0033 ;
+  border: 1px solid #520063 ;
   
   text-align: left; /* this overrides the text-align: center on the body element. */
 }
