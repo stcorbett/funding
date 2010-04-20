@@ -7,6 +7,7 @@ log/*.log
 tmp/**/*
 doc/api
 doc/app
+db/data.yml
 *.log
 *.sqlite3
 *.cache
