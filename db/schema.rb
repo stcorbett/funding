@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100403225857) do
+ActiveRecord::Schema.define(:version => 20100420164149) do
+
+  create_table "communities", :force => true do |t|
+    t.string   "name"
+    t.string   "subdomain"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "entries", :force => true do |t|
     t.string   "company_name"
@@ -25,6 +32,14 @@ ActiveRecord::Schema.define(:version => 20100403225857) do
     t.text     "tools"
     t.text     "wildcard"
     t.boolean  "spam"
+  end
+
+  create_table "grants", :force => true do |t|
+    t.integer  "community_id"
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "subscribers", :force => true do |t|
